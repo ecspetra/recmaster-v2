@@ -1,0 +1,2944 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title id="title-head">Что почитать</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Мастер рекомендаций</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="top-content">
+        <a href="https://www.livelib.ru/" target="_blank" class="ll-logo"
+          ><img src="img/logo_livelib.svg" alt="logo_livelib"
+        /></a>
+      </header>
+      <main>
+        <section class="wtr__list recmaster">
+          <h2 class="recmaster__title">Книжный рекомендательный сервис</h2>
+          <div class="recmaster-tab">
+            <div class="recmaster-tab__limiter">
+              <ul class="recmaster-tab__list">
+                <li
+                  class="recmaster-tab__item recmaster-tab__item--active"
+                  data="recmaster-type"
+                >
+                  <a href="javascript:void(0);">Тип</a>
+                </li>
+                <li class="recmaster-tab__item" data="recmaster-genre">
+                  <a href="javascript:void(0);">Жанры</a>
+                </li>
+                <li class="recmaster-tab__item" data="recmaster-author">
+                  <a href="javascript:void(0);">Авторы</a>
+                </li>
+                <li class="recmaster-tab__item" data="recmaster-genre-out">
+                  <a href="javascript:void(0);">Не рекомендовать жанры</a>
+                </li>
+                <li class="recmaster-tab__item" data="recmaster-author-out">
+                  <a href="javascript:void(0);">Не рекомендовать авторов</a>
+                </li>
+                <li class="recmaster-tab__item" data="recmaster-book">
+                  <a href="javascript:void(0);">Книги</a>
+                </li>
+                <li
+                  class="recmaster-tab__item recmaster-tab__final"
+                  data="recmaster-rec"
+                >
+                  <a href="javascript:void(0);">Рекомендации</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <form id="recmaster-form" action="">
+            <div id="recmaster-type" class="">
+              <p class="recmaster__text">
+                Выберите один или оба типа литературы
+              </p>
+              <div class="recmaster-block__wrap">
+                <label>
+                  <input type="checkbox" name="form[classics]" />
+                  <i class="recmaster__type">Классическая</i>
+                </label>
+                <label>
+                  <input type="checkbox" name="form[nonclassics]" />
+                  <i class="recmaster__type">Современная </i>
+                </label>
+              </div>
+              <div class="recmaster-btn__wrap">
+                <a class="recmaster-btn__next" disabled>Дальше</a>
+              </div>
+            </div>
+
+            <div id="recmaster-genre" class="hidden">
+              <p class="recmaster__text">
+                Выберите 5 или больше любимых жанров или воспользуйтесь поиском
+              </p>
+              <label for="search-genre"></label>
+              <input
+                id="search-genre"
+                name="search"
+                type="search"
+                placeholder="Название жанра"
+              />
+              <div class="recmaster-block__wrap">
+                <label
+                  ><input type="checkbox" name="rec-genre" value="1" /><i
+                    class="recmaster__genre"
+                    >Современная проза</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="2" /><i
+                    class="recmaster__genre"
+                    >Ужасы, мистика</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="3" /><i
+                    class="recmaster__genre"
+                    >Книги для подростков</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="4" /><i
+                    class="recmaster__genre"
+                    >Классическая литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="5" /><i
+                    class="recmaster__genre"
+                    >Фэнтези</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="6" /><i
+                    class="recmaster__genre"
+                    >Детские книги</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="7" /><i
+                    class="recmaster__genre"
+                    >Приключения</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="8" /><i
+                    class="recmaster__genre"
+                    >Фантастика</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="9" /><i
+                    class="recmaster__genre"
+                    >Зарубежная литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="10" /><i
+                    class="recmaster__genre"
+                    >Детективы</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="11" /><i
+                    class="recmaster__genre"
+                    >Комиксы, манга</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="12" /><i
+                    class="recmaster__genre"
+                    >Книги по психологии</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="13" /><i
+                    class="recmaster__genre"
+                    >Поэзия и драматургия</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="14" /><i
+                    class="recmaster__genre"
+                    >Эзотерика</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="15" /><i
+                    class="recmaster__genre"
+                    >Любовные романы</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="16" /><i
+                    class="recmaster__genre"
+                    >Бизнес-книги</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="17" /><i
+                    class="recmaster__genre"
+                    >Повести, рассказы</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="18" /><i
+                    class="recmaster__genre"
+                    >Публицистическая литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="19" /><i
+                    class="recmaster__genre"
+                    >Юмористическая литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="20" /><i
+                    class="recmaster__genre"
+                    >Культура и искусство</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="21" /><i
+                    class="recmaster__genre"
+                    >Дом, семья, хобби и досуг</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="22" /><i
+                    class="recmaster__genre"
+                    >Русская литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="23" /><i
+                    class="recmaster__genre"
+                    >Красота и здоровье</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="24" /><i
+                    class="recmaster__genre"
+                    >Религия</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="25" /><i
+                    class="recmaster__genre"
+                    >Периодические издания</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="26" /><i
+                    class="recmaster__genre"
+                    >Боевики, остросюжетная литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="27" /><i
+                    class="recmaster__genre"
+                    >Компьютерная литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="28" /><i
+                    class="recmaster__genre"
+                    >Эротика и секс</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="29" /><i
+                    class="recmaster__genre"
+                    >Словари, справочники</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="30" /><i
+                    class="recmaster__genre"
+                    >Учебная литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="31" /><i
+                    class="recmaster__genre"
+                    >Книги на иностранных языках</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="32" /><i
+                    class="recmaster__genre"
+                    >Наука и образование</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="33" /><i
+                    class="recmaster__genre"
+                    >ЛГБТ</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="34" /><i
+                    class="recmaster__genre"
+                    >Исторический роман</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre" value="35" /><i
+                    class="recmaster__genre"
+                    >Магический реализм</i
+                  ></label
+                >
+              </div>
+              <div class="recmaster-btn__wrap">
+                <a class="recmaster-btn__prev">Назад</a>
+                <a class="recmaster-btn__next">Дальше</a>
+              </div>
+            </div>
+
+            <div id="recmaster-author" class="hidden">
+              <p class="recmaster__text">
+                Выберите 5 или больше любимых авторов или воспользуйтесь поиском
+              </p>
+              <label for="search-author"></label>
+              <input
+                id="search-author"
+                name="search"
+                type="search"
+                placeholder="Имя, название книги"
+              />
+              <div class="recmaster-block__wrap">
+                <div class="recmaster-sort">
+                  <a
+                    href="javascript:void(0);"
+                    class="recmaster-sort__link recmaster-sort__link--active"
+                    >Все</a
+                  >
+                  <a href="javascript:void(0);" class="recmaster-sort__link"
+                    >Выбранные 2</a
+                  >
+                </div>
+                <div class="recmaster__author">
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="rec-author"
+                      value="1"
+                      checked /><i></i
+                  ></label>
+                  <img
+                    width="100%"
+                    height="100%"
+                    alt="Михаил Булгаков"
+                    src="img/author-1.png"
+                  />
+                  <a href="#">Михаил Булгаков</a>
+                  <div class="sab">
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-bookmark" href="#">38</a>
+                      <div class="sab__detailing">
+                        <p class="sab__title">38 добавили в избранное</p>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-authorbook" href="#">504</a>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-user" href="#">12К</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="recmaster__author">
+                  <label
+                    ><input type="checkbox" name="rec-author" value="2" /><i></i
+                  ></label>
+                  <img
+                    width="100%"
+                    height="100%"
+                    alt="Рэй Брэдбери"
+                    src="img/author-2.png"
+                  />
+                  <a href="#">Рэй Брэдбери</a>
+                  <div class="sab">
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-bookmark" href="#">38</a>
+                      <div class="sab__detailing">
+                        <p class="sab__title">38 добавили в избранное</p>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-authorbook" href="#">504</a>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-user" href="#">12К</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="recmaster__author">
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="rec-author"
+                      value="3"
+                      checked /><i></i
+                  ></label>
+                  <img
+                    width="100%"
+                    height="100%"
+                    alt="Стивен Кинг"
+                    src="img/author-3.png"
+                  />
+                  <a href="#">Стивен Кинг</a>
+                  <div class="sab">
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-bookmark" href="#">38</a>
+                      <div class="sab__detailing">
+                        <p class="sab__title">38 добавили в избранное</p>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-authorbook" href="#">504</a>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-user" href="#">12К</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="recmaster__author">
+                  <label
+                    ><input type="checkbox" name="rec-author" value="4" /><i></i
+                  ></label>
+                  <img
+                    width="100%"
+                    height="100%"
+                    alt="Джоан Роулинг"
+                    src="img/author-4.png"
+                  />
+                  <a href="#">Джоан Роулинг</a>
+                  <div class="sab">
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-bookmark" href="#">38</a>
+                      <div class="sab__detailing">
+                        <p class="sab__title">38 добавили в избранное</p>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-authorbook" href="#">504</a>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-user" href="#">12К</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="recmaster__author">
+                  <label
+                    ><input type="checkbox" name="rec-author" value="5" /><i></i
+                  ></label>
+                  <img
+                    width="100%"
+                    height="100%"
+                    alt="Эрих Мария Ремарк"
+                    src="img/author-5.png"
+                  />
+                  <a href="#">Эрих Мария Ремарк</a>
+                  <div class="sab">
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-bookmark" href="#">38</a>
+                      <div class="sab__detailing">
+                        <p class="sab__title">38 добавили в избранное</p>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-authorbook" href="#">504</a>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-user" href="#">12К</a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="recmaster-btn__more">Показать ещё</a>
+              </div>
+              <div class="recmaster-btn__wrap">
+                <a class="recmaster-btn__prev">Назад</a>
+                <a class="recmaster-btn__next">Дальше</a>
+              </div>
+            </div>
+
+            <div id="recmaster-genre-out" class="hidden">
+              <p class="recmaster__text">
+                Выберите жанры, рекомендации по которым вы не хотите получать
+              </p>
+              <label for="search"></label>
+              <input
+                id="search-genre"
+                name="search"
+                type="search"
+                placeholder="Название жанра"
+              />
+              <div class="recmaster-block__wrap">
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="1" /><i
+                    class="recmaster__genre"
+                    >Современная проза</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="2" /><i
+                    class="recmaster__genre"
+                    >Ужасы, мистика</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="3" /><i
+                    class="recmaster__genre"
+                    >Книги для подростков</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="4" /><i
+                    class="recmaster__genre"
+                    >Классическая литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="5" /><i
+                    class="recmaster__genre"
+                    >Фэнтези</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="6" /><i
+                    class="recmaster__genre"
+                    >Детские книги</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="7" /><i
+                    class="recmaster__genre"
+                    >Приключения</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="8" /><i
+                    class="recmaster__genre"
+                    >Фантастика</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="9" /><i
+                    class="recmaster__genre"
+                    >Зарубежная литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="10" /><i
+                    class="recmaster__genre"
+                    >Детективы</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="11" /><i
+                    class="recmaster__genre"
+                    >Комиксы, манга</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="12" /><i
+                    class="recmaster__genre"
+                    >Книги по психологии</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="13" /><i
+                    class="recmaster__genre"
+                    >Поэзия и драматургия</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="14" /><i
+                    class="recmaster__genre"
+                    >Эзотерика</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="15" /><i
+                    class="recmaster__genre"
+                    >Любовные романы</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="16" /><i
+                    class="recmaster__genre"
+                    >Бизнес-книги</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="17" /><i
+                    class="recmaster__genre"
+                    >Повести, рассказы</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="18" /><i
+                    class="recmaster__genre"
+                    >Публицистическая литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="19" /><i
+                    class="recmaster__genre"
+                    >Юмористическая литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="20" /><i
+                    class="recmaster__genre"
+                    >Культура и искусство</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="21" /><i
+                    class="recmaster__genre"
+                    >Дом, семья, хобби и досуг</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="22" /><i
+                    class="recmaster__genre"
+                    >Русская литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="23" /><i
+                    class="recmaster__genre"
+                    >Красота и здоровье</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="24" /><i
+                    class="recmaster__genre"
+                    >Религия</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="25" /><i
+                    class="recmaster__genre"
+                    >Периодические издания</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="26" /><i
+                    class="recmaster__genre"
+                    >Боевики, остросюжетная литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="27" /><i
+                    class="recmaster__genre"
+                    >Компьютерная литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="28" /><i
+                    class="recmaster__genre"
+                    >Эротика и секс</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="29" /><i
+                    class="recmaster__genre"
+                    >Словари, справочники</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="30" /><i
+                    class="recmaster__genre"
+                    >Учебная литература</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="31" /><i
+                    class="recmaster__genre"
+                    >Книги на иностранных языках</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="32" /><i
+                    class="recmaster__genre"
+                    >Наука и образование</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="33" /><i
+                    class="recmaster__genre"
+                    >ЛГБТ</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="34" /><i
+                    class="recmaster__genre"
+                    >Исторический роман</i
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="rec-genre-out" value="35" /><i
+                    class="recmaster__genre"
+                    >Магический реализм</i
+                  ></label
+                >
+              </div>
+              <div class="recmaster-btn__wrap">
+                <a class="recmaster-btn__prev">Назад</a>
+                <a class="recmaster-btn__next">Дальше</a>
+              </div>
+            </div>
+
+            <div id="recmaster-author-out" class="hidden">
+              <p class="recmaster__text">
+                Выберите авторов, рекомендации по которым вы не хотите получать
+              </p>
+              <label for="search-author"></label>
+              <input
+                id="search-author"
+                name="search"
+                type="search"
+                placeholder="Имя, название книги"
+              />
+              <div class="recmaster-block__wrap">
+                <div class="recmaster-sort">
+                  <a
+                    href="javascript:void(0);"
+                    class="recmaster-sort__link recmaster-sort__link--active"
+                    >Все</a
+                  >
+                  <a href="javascript:void(0);" class="recmaster-sort__link"
+                    >Выбранные 2</a
+                  >
+                  <a href="javascript:void(0);" class="recmaster-sort__link"
+                    >Любимые 5</a
+                  >
+                </div>
+                <div class="recmaster__author">
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="rec-author-out"
+                      value="1"
+                      checked /><i></i
+                  ></label>
+                  <img
+                    width="100%"
+                    height="100%"
+                    alt="Михаил Булгаков"
+                    src="img/author-1.png"
+                  />
+                  <a href="#">Михаил Булгаков</a>
+                  <div class="sab">
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-bookmark" href="#">38</a>
+                      <div class="sab__detailing">
+                        <p class="sab__title">38 добавили в избранное</p>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-authorbook" href="#">504</a>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-user" href="#">12К</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="recmaster__author">
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="rec-author-out"
+                      value="2" /><i></i
+                  ></label>
+                  <img
+                    width="100%"
+                    height="100%"
+                    alt="Рэй Брэдбери"
+                    src="img/author-2.png"
+                  />
+                  <a href="#">Рэй Брэдбери</a>
+                  <div class="sab">
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-bookmark" href="#">38</a>
+                      <div class="sab__detailing">
+                        <p class="sab__title">38 добавили в избранное</p>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-authorbook" href="#">504</a>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-user" href="#">12К</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="recmaster__author">
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="rec-author-out"
+                      value="3"
+                      checked /><i></i
+                  ></label>
+                  <img
+                    width="100%"
+                    height="100%"
+                    alt="Стивен Кинг"
+                    src="img/author-3.png"
+                  />
+                  <a href="#">Стивен Кинг</a>
+                  <div class="sab">
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-bookmark" href="#">38</a>
+                      <div class="sab__detailing">
+                        <p class="sab__title">38 добавили в избранное</p>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-authorbook" href="#">504</a>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-user" href="#">12К</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="recmaster__author">
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="rec-author-out"
+                      value="4" /><i></i
+                  ></label>
+                  <img
+                    width="100%"
+                    height="100%"
+                    alt="Джоан Роулинг"
+                    src="img/author-4.png"
+                  />
+                  <a href="#">Джоан Роулинг</a>
+                  <div class="sab">
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-bookmark" href="#">38</a>
+                      <div class="sab__detailing">
+                        <p class="sab__title">38 добавили в избранное</p>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-authorbook" href="#">504</a>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-user" href="#">12К</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="recmaster__author">
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="rec-author-out"
+                      value="5" /><i></i
+                  ></label>
+                  <img
+                    width="100%"
+                    height="100%"
+                    alt="Эрих Мария Ремарк"
+                    src="img/author-5.png"
+                  />
+                  <a href="#">Эрих Мария Ремарк</a>
+                  <div class="sab">
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-bookmark" href="#">38</a>
+                      <div class="sab__detailing">
+                        <p class="sab__title">38 добавили в избранное</p>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                        <a class="sab__user" href="#"
+                          ><img
+                            src="img/avatar-JewelJul.png"
+                            width="100%"
+                            height="100%"
+                            alt="JewelJul"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-authorbook" href="#">504</a>
+                    </div>
+                    <div class="sab__wrapper">
+                      <a class="sab__link icon-user" href="#">12К</a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="recmaster-btn__more">Показать ещё</a>
+              </div>
+              <div class="recmaster-btn__wrap">
+                <a class="recmaster-btn__prev">Назад</a>
+                <a class="recmaster-btn__next">Дальше</a>
+              </div>
+            </div>
+            <div id="recmaster-book" class="hidden">
+              <p class="recmaster__text">
+                Оцените 15 или больше прочитанных вами книг
+              </p>
+              <label for="search-book"></label>
+              <input
+                id="search-book"
+                name="search"
+                type="search"
+                placeholder="Название / ISBN / Автор"
+              />
+              <div class="recmaster-block__wrap">
+                <div id="recmaster-books-list-all">
+                  <ul class="lists__list recmaster-booklist">
+                    <li class="lists__item">
+                      <div class="bc-menu__rating">
+                        <div class="bc-menu__stars">
+                          <input
+                            type="radio"
+                            id="1-bc-rating-10"
+                            value="10"
+                            name="1-bc-rating"
+                          />
+                          <label for="1-bc-rating-10"></label>
+                          <input
+                            type="radio"
+                            id="1-bc-rating-9"
+                            value="9"
+                            name="1-bc-rating"
+                          />
+                          <label for="1-bc-rating-9"></label>
+                          <input
+                            type="radio"
+                            id="1-bc-rating-8"
+                            value="8"
+                            name="1-bc-rating"
+                          />
+                          <label for="1-bc-rating-8"></label>
+                          <input
+                            type="radio"
+                            id="1-bc-rating-7"
+                            value="7"
+                            name="1-bc-rating"
+                          />
+                          <label for="1-bc-rating-7"></label>
+                          <input
+                            type="radio"
+                            id="1-bc-rating-6"
+                            value="6"
+                            name="1-bc-rating"
+                          />
+                          <label for="1-bc-rating-6"></label>
+                          <input
+                            type="radio"
+                            id="1-bc-rating-5"
+                            value="5"
+                            name="1-bc-rating"
+                          />
+                          <label for="1-bc-rating-5"></label>
+                          <input
+                            type="radio"
+                            id="1-bc-rating-4"
+                            value="4"
+                            name="1-bc-rating"
+                          />
+                          <label for="1-bc-rating-4"></label>
+                          <input
+                            type="radio"
+                            id="1-bc-rating-3"
+                            value="3"
+                            name="1-bc-rating"
+                          />
+                          <label for="1-bc-rating-3"></label>
+                          <input
+                            type="radio"
+                            id="1-bc-rating-2"
+                            value="2"
+                            name="1-bc-rating"
+                          />
+                          <label for="1-bc-rating-2"></label>
+                          <input
+                            type="radio"
+                            id="1-bc-rating-1"
+                            value="1"
+                            name="1-bc-rating"
+                          />
+                          <label for="1-bc-rating-1"></label>
+                        </div>
+                        <p>Моя оценка</p>
+                      </div>
+                      <span class="lists__status lists__status-read"
+                        >Прочитал</span
+                      >
+                      <a class="lists__link" href="#">
+                        <img
+                          src="img/book-1.png"
+                          width="100%"
+                          height="auto"
+                          alt="Золотая клетка"
+                        />
+                      </a>
+                      <div class="lists__wrapper">
+                        <a class="lists__book-title" href="#">Золотая клетка</a>
+                        <div class="lists__menu">
+                          <div class="lists__menu-block">
+                            <a href="#">Поделиться</a>
+                          </div>
+                        </div>
+                        <a class="lists__author" href="#">Камилла Лэкберг</a>
+                        <div class="lists__mymark">4,0</div>
+                        <div class="lists__rating">3,7</div>
+                        <a class="btn-add-plus btn-add-plus--add" href=""></a>
+                      </div>
+                    </li>
+
+                    <li class="lists__item">
+                      <div class="bc-menu__rating">
+                        <div class="bc-menu__stars">
+                          <input
+                            type="radio"
+                            id="2-bc-rating-10"
+                            value="10"
+                            name="2-bc-rating"
+                          />
+                          <label for="2-bc-rating-10"></label>
+                          <input
+                            type="radio"
+                            id="2-bc-rating-9"
+                            value="9"
+                            name="2-bc-rating"
+                          />
+                          <label for="2-bc-rating-9"></label>
+                          <input
+                            type="radio"
+                            id="2-bc-rating-8"
+                            value="8"
+                            name="2-bc-rating"
+                          />
+                          <label for="2-bc-rating-8"></label>
+                          <input
+                            type="radio"
+                            id="2-bc-rating-7"
+                            value="7"
+                            name="2-bc-rating"
+                          />
+                          <label for="2-bc-rating-7"></label>
+                          <input
+                            type="radio"
+                            id="2-bc-rating-6"
+                            value="6"
+                            name="2-bc-rating"
+                          />
+                          <label for="2-bc-rating-6"></label>
+                          <input
+                            type="radio"
+                            id="2-bc-rating-5"
+                            value="5"
+                            name="2-bc-rating"
+                          />
+                          <label for="2-bc-rating-5"></label>
+                          <input
+                            type="radio"
+                            id="2-bc-rating-4"
+                            value="4"
+                            name="2-bc-rating"
+                          />
+                          <label for="2-bc-rating-4"></label>
+                          <input
+                            type="radio"
+                            id="2-bc-rating-3"
+                            value="3"
+                            name="2-bc-rating"
+                          />
+                          <label for="2-bc-rating-3"></label>
+                          <input
+                            type="radio"
+                            id="2-bc-rating-2"
+                            value="2"
+                            name="2-bc-rating"
+                          />
+                          <label for="2-bc-rating-2"></label>
+                          <input
+                            type="radio"
+                            id="2-bc-rating-1"
+                            value="1"
+                            name="2-bc-rating"
+                          />
+                          <label for="2-bc-rating-1"></label>
+                        </div>
+                        <p>Моя оценка</p>
+                      </div>
+                      <span class="lists__status">Бестселлер</span>
+                      <a class="lists__link" href="#">
+                        <img
+                          src="img/book-2.png"
+                          width="100%"
+                          height="auto"
+                          alt="Машины как я"
+                        />
+                      </a>
+                      <div class="lists__wrapper">
+                        <a class="lists__book-title" href="#">Машины как я</a>
+                        <div class="lists__menu">
+                          <div class="lists__menu-block">
+                            <a href="#">Поделиться</a>
+                          </div>
+                        </div>
+                        <a class="lists__author" href="#">Иэн Макьюэн</a>
+                        <div class="lists__rating">3,4</div>
+                        <a class="btn-add-plus" href=""></a>
+                      </div>
+                    </li>
+
+                    <li class="lists__item">
+                      <div class="bc-menu__rating">
+                        <div class="bc-menu__stars">
+                          <input
+                            type="radio"
+                            id="3-bc-rating-10"
+                            value="10"
+                            name="3-bc-rating"
+                          />
+                          <label for="3-bc-rating-10"></label>
+                          <input
+                            type="radio"
+                            id="3-bc-rating-9"
+                            value="9"
+                            name="3-bc-rating"
+                          />
+                          <label for="3-bc-rating-9"></label>
+                          <input
+                            type="radio"
+                            id="3-bc-rating-8"
+                            value="8"
+                            name="3-bc-rating"
+                          />
+                          <label for="3-bc-rating-8"></label>
+                          <input
+                            type="radio"
+                            id="3-bc-rating-7"
+                            value="7"
+                            name="3-bc-rating"
+                          />
+                          <label for="3-bc-rating-7"></label>
+                          <input
+                            type="radio"
+                            id="3-bc-rating-6"
+                            value="6"
+                            name="3-bc-rating"
+                          />
+                          <label for="3-bc-rating-6"></label>
+                          <input
+                            type="radio"
+                            id="3-bc-rating-5"
+                            value="5"
+                            name="3-bc-rating"
+                          />
+                          <label for="3-bc-rating-5"></label>
+                          <input
+                            type="radio"
+                            id="3-bc-rating-4"
+                            value="4"
+                            name="3-bc-rating"
+                          />
+                          <label for="3-bc-rating-4"></label>
+                          <input
+                            type="radio"
+                            id="3-bc-rating-3"
+                            value="3"
+                            name="3-bc-rating"
+                          />
+                          <label for="3-bc-rating-3"></label>
+                          <input
+                            type="radio"
+                            id="3-bc-rating-2"
+                            value="2"
+                            name="3-bc-rating"
+                          />
+                          <label for="3-bc-rating-2"></label>
+                          <input
+                            type="radio"
+                            id="3-bc-rating-1"
+                            value="1"
+                            name="3-bc-rating"
+                          />
+                          <label for="3-bc-rating-1"></label>
+                        </div>
+                        <p>Моя оценка</p>
+                      </div>
+                      <a class="lists__link" href="#">
+                        <img
+                          src="img/book-3.png"
+                          width="100%"
+                          height="auto"
+                          alt="Мистер"
+                        />
+                      </a>
+                      <div class="lists__wrapper">
+                        <a class="lists__book-title" href="#">Мистер</a>
+                        <div class="lists__menu">
+                          <div class="lists__menu-block">
+                            <a href="#">Поделиться</a>
+                          </div>
+                        </div>
+                        <a class="lists__author" href="#">Эрика Джеймс</a>
+                        <div class="lists__rating">3,0</div>
+                        <a class="btn-add-plus" href=""></a>
+                      </div>
+                    </li>
+
+                    <li class="lists__item">
+                      <div class="bc-menu__rating">
+                        <div class="bc-menu__stars">
+                          <input
+                            type="radio"
+                            id="4-bc-rating-10"
+                            value="10"
+                            name="4-bc-rating"
+                          />
+                          <label for="4-bc-rating-10"></label>
+                          <input
+                            type="radio"
+                            id="4-bc-rating-9"
+                            value="9"
+                            name="4-bc-rating"
+                          />
+                          <label for="4-bc-rating-9"></label>
+                          <input
+                            type="radio"
+                            id="4-bc-rating-8"
+                            value="8"
+                            name="4-bc-rating"
+                          />
+                          <label for="4-bc-rating-8"></label>
+                          <input
+                            type="radio"
+                            id="4-bc-rating-7"
+                            value="7"
+                            name="4-bc-rating"
+                          />
+                          <label for="4-bc-rating-7"></label>
+                          <input
+                            type="radio"
+                            id="4-bc-rating-6"
+                            value="6"
+                            name="4-bc-rating"
+                          />
+                          <label for="4-bc-rating-6"></label>
+                          <input
+                            type="radio"
+                            id="4-bc-rating-5"
+                            value="5"
+                            name="4-bc-rating"
+                          />
+                          <label for="4-bc-rating-5"></label>
+                          <input
+                            type="radio"
+                            id="4-bc-rating-4"
+                            value="4"
+                            name="4-bc-rating"
+                          />
+                          <label for="4-bc-rating-4"></label>
+                          <input
+                            type="radio"
+                            id="4-bc-rating-3"
+                            value="3"
+                            name="4-bc-rating"
+                          />
+                          <label for="4-bc-rating-3"></label>
+                          <input
+                            type="radio"
+                            id="4-bc-rating-2"
+                            value="2"
+                            name="4-bc-rating"
+                          />
+                          <label for="4-bc-rating-2"></label>
+                          <input
+                            type="radio"
+                            id="4-bc-rating-1"
+                            value="1"
+                            name="4-bc-rating"
+                          />
+                          <label for="4-bc-rating-1"></label>
+                        </div>
+                        <p>Моя оценка</p>
+                      </div>
+                      <span class="lists__status">Бестселлер</span>
+                      <a class="lists__link" href="#">
+                        <img
+                          src="img/book-4.png"
+                          width="100%"
+                          height="auto"
+                          alt="Дерзкий, юный и мертвый"
+                        />
+                      </a>
+                      <div class="lists__wrapper">
+                        <a class="lists__book-title" href="#"
+                          >Дерзкий, юный и мертвый</a
+                        >
+                        <div class="lists__menu">
+                          <div class="lists__menu-block">
+                            <a href="#">Поделиться</a>
+                          </div>
+                        </div>
+                        <a class="lists__author" href="#">Джессика Феллоуз</a>
+                        <div class="lists__rating">5,0</div>
+                        <a class="btn-add-plus" href=""></a>
+                      </div>
+                    </li>
+                    <li class="lists__item">
+                      <div class="bc-menu__rating">
+                        <div class="bc-menu__stars">
+                          <input
+                            type="radio"
+                            id="5-bc-rating-10"
+                            value="10"
+                            name="5-bc-rating"
+                          />
+                          <label for="5-bc-rating-10"></label>
+                          <input
+                            type="radio"
+                            id="5-bc-rating-9"
+                            value="9"
+                            name="5-bc-rating"
+                          />
+                          <label for="5-bc-rating-9"></label>
+                          <input
+                            type="radio"
+                            id="5-bc-rating-8"
+                            value="8"
+                            name="5-bc-rating"
+                          />
+                          <label for="5-bc-rating-8"></label>
+                          <input
+                            type="radio"
+                            id="5-bc-rating-7"
+                            value="7"
+                            name="5-bc-rating"
+                          />
+                          <label for="5-bc-rating-7"></label>
+                          <input
+                            type="radio"
+                            id="5-bc-rating-6"
+                            value="6"
+                            name="5-bc-rating"
+                          />
+                          <label for="5-bc-rating-6"></label>
+                          <input
+                            type="radio"
+                            id="5-bc-rating-5"
+                            value="5"
+                            name="5-bc-rating"
+                          />
+                          <label for="5-bc-rating-5"></label>
+                          <input
+                            type="radio"
+                            id="5-bc-rating-4"
+                            value="4"
+                            name="5-bc-rating"
+                          />
+                          <label for="5-bc-rating-4"></label>
+                          <input
+                            type="radio"
+                            id="5-bc-rating-3"
+                            value="3"
+                            name="5-bc-rating"
+                          />
+                          <label for="5-bc-rating-3"></label>
+                          <input
+                            type="radio"
+                            id="5-bc-rating-2"
+                            value="2"
+                            name="5-bc-rating"
+                          />
+                          <label for="5-bc-rating-2"></label>
+                          <input
+                            type="radio"
+                            id="5-bc-rating-1"
+                            value="1"
+                            name="5-bc-rating"
+                          />
+                          <label for="5-bc-rating-1"></label>
+                        </div>
+                        <p>Моя оценка</p>
+                      </div>
+                      <a class="lists__link" href="#">
+                        <img
+                          src="img/book-5.png"
+                          width="100%"
+                          height="auto"
+                          alt="Быть книголюбом"
+                        />
+                      </a>
+                      <div class="lists__wrapper">
+                        <a class="lists__book-title" href="#"
+                          >Быть книголюбом</a
+                        >
+                        <div class="lists__menu">
+                          <div class="lists__menu-block">
+                            <a href="#">Поделиться</a>
+                          </div>
+                        </div>
+                        <a class="lists__author" href="#">Дебби Танг</a>
+                        <div class="lists__rating">4,6</div>
+                        <a class="btn-add-plus" href=""></a>
+                      </div>
+                    </li>
+
+                    <li class="lists__item">
+                      <div class="bc-menu__rating">
+                        <div class="bc-menu__stars">
+                          <input
+                            type="radio"
+                            id="6-bc-rating-10"
+                            value="10"
+                            name="6-bc-rating"
+                          />
+                          <label for="6-bc-rating-10"></label>
+                          <input
+                            type="radio"
+                            id="6-bc-rating-9"
+                            value="9"
+                            name="6-bc-rating"
+                          />
+                          <label for="6-bc-rating-9"></label>
+                          <input
+                            type="radio"
+                            id="6-bc-rating-8"
+                            value="8"
+                            name="6-bc-rating"
+                          />
+                          <label for="6-bc-rating-8"></label>
+                          <input
+                            type="radio"
+                            id="6-bc-rating-7"
+                            value="7"
+                            name="6-bc-rating"
+                          />
+                          <label for="6-bc-rating-7"></label>
+                          <input
+                            type="radio"
+                            id="6-bc-rating-6"
+                            value="6"
+                            name="6-bc-rating"
+                          />
+                          <label for="6-bc-rating-6"></label>
+                          <input
+                            type="radio"
+                            id="6-bc-rating-5"
+                            value="5"
+                            name="6-bc-rating"
+                          />
+                          <label for="6-bc-rating-5"></label>
+                          <input
+                            type="radio"
+                            id="6-bc-rating-4"
+                            value="4"
+                            name="6-bc-rating"
+                          />
+                          <label for="6-bc-rating-4"></label>
+                          <input
+                            type="radio"
+                            id="6-bc-rating-3"
+                            value="3"
+                            name="6-bc-rating"
+                          />
+                          <label for="6-bc-rating-3"></label>
+                          <input
+                            type="radio"
+                            id="6-bc-rating-2"
+                            value="2"
+                            name="6-bc-rating"
+                          />
+                          <label for="6-bc-rating-2"></label>
+                          <input
+                            type="radio"
+                            id="6-bc-rating-1"
+                            value="1"
+                            name="6-bc-rating"
+                          />
+                          <label for="6-bc-rating-1"></label>
+                        </div>
+                        <p>Моя оценка</p>
+                      </div>
+                      <a class="lists__link" href="#">
+                        <img
+                          src="img/book-6.png"
+                          width="100%"
+                          height="auto"
+                          alt="Спаси себя"
+                        />
+                      </a>
+                      <div class="lists__wrapper">
+                        <a class="lists__book-title" href="#">Спаси себя</a>
+                        <div class="lists__menu">
+                          <div class="lists__menu-block">
+                            <a href="#">Поделиться</a>
+                          </div>
+                        </div>
+                        <a class="lists__author" href="#">Мона Кастен</a>
+                        <div class="lists__rating">4,3</div>
+                        <a class="btn-add-plus" href=""></a>
+                      </div>
+                    </li>
+
+                    <li class="lists__item">
+                      <div class="bc-menu__rating">
+                        <div class="bc-menu__stars">
+                          <input
+                            type="radio"
+                            id="7-bc-rating-10"
+                            value="10"
+                            name="7-bc-rating"
+                          />
+                          <label for="7-bc-rating-10"></label>
+                          <input
+                            type="radio"
+                            id="7-bc-rating-9"
+                            value="9"
+                            name="7-bc-rating"
+                          />
+                          <label for="7-bc-rating-9"></label>
+                          <input
+                            type="radio"
+                            id="7-bc-rating-8"
+                            value="8"
+                            name="7-bc-rating"
+                          />
+                          <label for="7-bc-rating-8"></label>
+                          <input
+                            type="radio"
+                            id="7-bc-rating-7"
+                            value="7"
+                            name="7-bc-rating"
+                          />
+                          <label for="7-bc-rating-7"></label>
+                          <input
+                            type="radio"
+                            id="7-bc-rating-6"
+                            value="6"
+                            name="7-bc-rating"
+                          />
+                          <label for="7-bc-rating-6"></label>
+                          <input
+                            type="radio"
+                            id="7-bc-rating-5"
+                            value="5"
+                            name="7-bc-rating"
+                          />
+                          <label for="7-bc-rating-5"></label>
+                          <input
+                            type="radio"
+                            id="7-bc-rating-4"
+                            value="4"
+                            name="7-bc-rating"
+                          />
+                          <label for="7-bc-rating-4"></label>
+                          <input
+                            type="radio"
+                            id="7-bc-rating-3"
+                            value="3"
+                            name="7-bc-rating"
+                          />
+                          <label for="7-bc-rating-3"></label>
+                          <input
+                            type="radio"
+                            id="7-bc-rating-2"
+                            value="2"
+                            name="7-bc-rating"
+                          />
+                          <label for="7-bc-rating-2"></label>
+                          <input
+                            type="radio"
+                            id="7-bc-rating-1"
+                            value="1"
+                            name="7-bc-rating"
+                          />
+                          <label for="7-bc-rating-1"></label>
+                        </div>
+                        <p>Моя оценка</p>
+                      </div>
+                      <span class="lists__status lists__status-read"
+                        >Прочитал</span
+                      >
+                      <a class="lists__link" href="#">
+                        <img
+                          src="img/book-7.png"
+                          width="100%"
+                          height="auto"
+                          alt="Серотонин"
+                        />
+                      </a>
+                      <div class="lists__wrapper">
+                        <a class="lists__book-title" href="#">Серотонин</a>
+                        <div class="lists__menu">
+                          <div class="lists__menu-block">
+                            <a href="#">Поделиться</a>
+                          </div>
+                        </div>
+                        <a class="lists__author" href="#">Мишель Уэльбек</a>
+                        <div class="lists__mymark">4,5</div>
+                        <div class="lists__rating">4,0</div>
+                        <a class="btn-add-plus" href=""></a>
+                      </div>
+                    </li>
+
+                    <li class="lists__item">
+                      <div class="bc-menu__rating">
+                        <div class="bc-menu__stars">
+                          <input
+                            type="radio"
+                            id="8-bc-rating-10"
+                            value="10"
+                            name="8-bc-rating"
+                          />
+                          <label for="8-bc-rating-10"></label>
+                          <input
+                            type="radio"
+                            id="8-bc-rating-9"
+                            value="9"
+                            name="8-bc-rating"
+                          />
+                          <label for="8-bc-rating-9"></label>
+                          <input
+                            type="radio"
+                            id="8-bc-rating-8"
+                            value="8"
+                            name="8-bc-rating"
+                          />
+                          <label for="8-bc-rating-8"></label>
+                          <input
+                            type="radio"
+                            id="8-bc-rating-7"
+                            value="7"
+                            name="8-bc-rating"
+                          />
+                          <label for="8-bc-rating-7"></label>
+                          <input
+                            type="radio"
+                            id="8-bc-rating-6"
+                            value="6"
+                            name="8-bc-rating"
+                          />
+                          <label for="8-bc-rating-6"></label>
+                          <input
+                            type="radio"
+                            id="8-bc-rating-5"
+                            value="5"
+                            name="8-bc-rating"
+                          />
+                          <label for="8-bc-rating-5"></label>
+                          <input
+                            type="radio"
+                            id="8-bc-rating-4"
+                            value="4"
+                            name="8-bc-rating"
+                          />
+                          <label for="8-bc-rating-4"></label>
+                          <input
+                            type="radio"
+                            id="8-bc-rating-3"
+                            value="3"
+                            name="8-bc-rating"
+                          />
+                          <label for="8-bc-rating-3"></label>
+                          <input
+                            type="radio"
+                            id="8-bc-rating-2"
+                            value="2"
+                            name="8-bc-rating"
+                          />
+                          <label for="8-bc-rating-2"></label>
+                          <input
+                            type="radio"
+                            id="8-bc-rating-1"
+                            value="1"
+                            name="8-bc-rating"
+                          />
+                          <label for="8-bc-rating-1"></label>
+                        </div>
+                        <p>Моя оценка</p>
+                      </div>
+                      <a class="lists__link" href="#">
+                        <img
+                          src="img/book-8.png"
+                          width="100%"
+                          height="auto"
+                          alt="Цветок тьмы"
+                        />
+                      </a>
+                      <div class="lists__wrapper">
+                        <a class="lists__book-title" href="#">Цветок тьмы</a>
+                        <div class="lists__menu">
+                          <div class="lists__menu-block">
+                            <a href="#">Поделиться</a>
+                          </div>
+                        </div>
+                        <a class="lists__author" href="#">П. М. Фристоун</a>
+                        <div class="lists__rating">4,0</div>
+                        <a class="btn-add-plus" href=""></a>
+                      </div>
+                    </li>
+
+                    <li class="lists__item">
+                      <div class="bc-menu__rating">
+                        <div class="bc-menu__stars">
+                          <input
+                            type="radio"
+                            id="9-bc-rating-10"
+                            value="10"
+                            name="9-bc-rating"
+                          />
+                          <label for="9-bc-rating-10"></label>
+                          <input
+                            type="radio"
+                            id="9-bc-rating-9"
+                            value="9"
+                            name="9-bc-rating"
+                          />
+                          <label for="9-bc-rating-9"></label>
+                          <input
+                            type="radio"
+                            id="9-bc-rating-8"
+                            value="8"
+                            name="9-bc-rating"
+                          />
+                          <label for="9-bc-rating-8"></label>
+                          <input
+                            type="radio"
+                            id="9-bc-rating-7"
+                            value="7"
+                            name="9-bc-rating"
+                          />
+                          <label for="9-bc-rating-7"></label>
+                          <input
+                            type="radio"
+                            id="9-bc-rating-6"
+                            value="6"
+                            name="9-bc-rating"
+                          />
+                          <label for="9-bc-rating-6"></label>
+                          <input
+                            type="radio"
+                            id="9-bc-rating-5"
+                            value="5"
+                            name="9-bc-rating"
+                          />
+                          <label for="9-bc-rating-5"></label>
+                          <input
+                            type="radio"
+                            id="9-bc-rating-4"
+                            value="4"
+                            name="9-bc-rating"
+                          />
+                          <label for="9-bc-rating-4"></label>
+                          <input
+                            type="radio"
+                            id="9-bc-rating-3"
+                            value="3"
+                            name="9-bc-rating"
+                          />
+                          <label for="9-bc-rating-3"></label>
+                          <input
+                            type="radio"
+                            id="9-bc-rating-2"
+                            value="2"
+                            name="9-bc-rating"
+                          />
+                          <label for="9-bc-rating-2"></label>
+                          <input
+                            type="radio"
+                            id="9-bc-rating-1"
+                            value="1"
+                            name="9-bc-rating"
+                          />
+                          <label for="9-bc-rating-1"></label>
+                        </div>
+                        <p>Моя оценка</p>
+                      </div>
+                      <a class="lists__link" href="#">
+                        <img
+                          src="img/book-9.png"
+                          width="100%"
+                          height="auto"
+                          alt="Харли Квинн: Безумная..."
+                        />
+                      </a>
+                      <div class="lists__wrapper">
+                        <a class="lists__book-title" href="#"
+                          >Харли Квинн: Безумная...</a
+                        >
+                        <div class="lists__menu">
+                          <div class="lists__menu-block">
+                            <a href="#">Поделиться</a>
+                          </div>
+                        </div>
+                        <a class="lists__author" href="#">Пэт Кэдиган, Пол</a>
+                        <div class="lists__rating">0</div>
+                        <a class="btn-add-plus" href=""></a>
+                      </div>
+                    </li>
+                    <li class="lists__item">
+                      <div class="bc-menu__rating">
+                        <div class="bc-menu__stars">
+                          <input
+                            type="radio"
+                            id="10-bc-rating-10"
+                            value="10"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-10"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-9"
+                            value="9"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-9"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-8"
+                            value="8"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-8"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-7"
+                            value="7"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-7"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-6"
+                            value="6"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-6"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-5"
+                            value="5"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-5"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-4"
+                            value="4"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-4"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-3"
+                            value="3"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-3"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-2"
+                            value="2"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-2"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-1"
+                            value="1"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-1"></label>
+                        </div>
+                        <p>Моя оценка</p>
+                      </div>
+                      <a class="lists__link" href="#">
+                        <img
+                          src="img/book-10.png"
+                          width="100%"
+                          height="auto"
+                          alt="Земля"
+                        />
+                      </a>
+                      <div class="lists__wrapper">
+                        <a class="lists__book-title" href="#">Земля</a>
+                        <div class="lists__menu">
+                          <div class="lists__menu-block">
+                            <a href="#">Поделиться</a>
+                          </div>
+                        </div>
+                        <a class="lists__author" href="#">Михаил Елизаров</a>
+                        <div class="lists__rating">4,0</div>
+                        <a class="btn-add-plus" href=""></a>
+                      </div>
+                    </li>
+                    <li class="lists__item">
+                      <div class="bc-menu__rating">
+                        <div class="bc-menu__stars">
+                          <input
+                            type="radio"
+                            id="10-bc-rating-10"
+                            value="10"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-10"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-9"
+                            value="9"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-9"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-8"
+                            value="8"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-8"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-7"
+                            value="7"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-7"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-6"
+                            value="6"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-6"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-5"
+                            value="5"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-5"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-4"
+                            value="4"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-4"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-3"
+                            value="3"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-3"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-2"
+                            value="2"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-2"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-1"
+                            value="1"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-1"></label>
+                        </div>
+                        <p>Моя оценка</p>
+                      </div>
+                      <a class="lists__link" href="#">
+                        <img
+                          src="img/book-11.png"
+                          width="100%"
+                          height="auto"
+                          alt="Земля"
+                        />
+                      </a>
+                      <div class="lists__wrapper">
+                        <a class="lists__book-title" href="#">Земля</a>
+                        <div class="lists__menu">
+                          <div class="lists__menu-block">
+                            <a href="#">Поделиться</a>
+                          </div>
+                        </div>
+                        <a class="lists__author" href="#">Михаил Елизаров</a>
+                        <div class="lists__rating">4,0</div>
+                        <a class="btn-add-plus" href=""></a>
+                      </div>
+                    </li>
+                    <li class="lists__item">
+                      <div class="bc-menu__rating">
+                        <div class="bc-menu__stars">
+                          <input
+                            type="radio"
+                            id="10-bc-rating-10"
+                            value="10"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-10"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-9"
+                            value="9"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-9"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-8"
+                            value="8"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-8"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-7"
+                            value="7"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-7"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-6"
+                            value="6"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-6"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-5"
+                            value="5"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-5"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-4"
+                            value="4"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-4"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-3"
+                            value="3"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-3"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-2"
+                            value="2"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-2"></label>
+                          <input
+                            type="radio"
+                            id="10-bc-rating-1"
+                            value="1"
+                            name="10-bc-rating"
+                          />
+                          <label for="10-bc-rating-1"></label>
+                        </div>
+                        <p>Моя оценка</p>
+                      </div>
+                      <a class="lists__link" href="#">
+                        <img
+                          src="img/book-12.png"
+                          width="100%"
+                          height="auto"
+                          alt="Земля"
+                        />
+                      </a>
+                      <div class="lists__wrapper">
+                        <a class="lists__book-title" href="#">Земля</a>
+                        <div class="lists__menu">
+                          <div class="lists__menu-block">
+                            <a href="#">Поделиться</a>
+                          </div>
+                        </div>
+                        <a class="lists__author" href="#">Михаил Елизаров</a>
+                        <div class="lists__rating">4,0</div>
+                        <a class="btn-add-plus" href=""></a>
+                      </div>
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    class="
+                      recmaster-btn__more recmaster-btn__more-books-section
+                    "
+                    >Показать ещё</a
+                  >
+                </div>
+                <div class="recmaster-btn__wrap">
+                  <a class="recmaster-btn__prev">Назад</a>
+                  <a class="recmaster-btn__next">Дальше</a>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div id="recmaster-rec" class="hidden">
+            <div class="recmaster-final">
+              <h2>Рекомендации сообщества Лайвлиб</h2>
+              <p>Идет подготовка рекомендаций.</p>
+              <p>Мы сообщим вам, когда рекомендации сформируются.</p>
+            </div>
+            <div class="recmaster-block__wrap">
+              <ul class="lists__list recmaster-booklist">
+                <li class="lists__item">
+                  <a class="lists__remove" href="javascript:void(0);" onclick=""
+                    >Не интересно</a
+                  >
+                  <a class="lists__link" href="#">
+                    <img
+                      src="img/book-1.png"
+                      width="100%"
+                      height="auto"
+                      alt="Золотая клетка"
+                    />
+                  </a>
+                  <div class="lists__wrapper">
+                    <a class="lists__book-title" href="#">Золотая клетка</a>
+                    <div class="lists__menu">
+                      <div class="lists__menu-block">
+                        <a href="javascript:void(0);" onclick="">Поделиться</a>
+                        <a
+                          href="javascript:void(0);"
+                          title="Не интересно"
+                          onclick=""
+                          >Не интересно</a
+                        >
+                      </div>
+                    </div>
+                    <a class="lists__author" href="#">Камилла Лэкберг</a>
+                    <div class="lists__rating">3,7</div>
+                    <a class="btn-add-plus" href=""></a>
+                  </div>
+                </li>
+
+                <li class="lists__item">
+                  <span class="lists__status">Бестселлер</span
+                  ><a
+                    class="lists__remove"
+                    href="javascript:void(0);"
+                    onclick=""
+                    >Не интересно</a
+                  >
+                  <a class="lists__link" href="#">
+                    <img
+                      src="img/book-2.png"
+                      width="100%"
+                      height="auto"
+                      alt="Машины как я"
+                    />
+                  </a>
+                  <div class="lists__wrapper">
+                    <a class="lists__book-title" href="#">Машины как я</a>
+                    <div class="lists__menu">
+                      <div class="lists__menu-block">
+                        <a href="javascript:void(0);" onclick="">Поделиться</a>
+                        <a
+                          href="javascript:void(0);"
+                          title="Не интересно"
+                          onclick=""
+                          >Не интересно</a
+                        >
+                      </div>
+                    </div>
+                    <a class="lists__author" href="#">Иэн Макьюэн</a>
+                    <div class="lists__rating">3,4</div>
+                    <a class="btn-add-plus" href=""></a>
+                  </div>
+                </li>
+
+                <li class="lists__item">
+                  <a class="lists__remove" href="javascript:void(0);" onclick=""
+                    >Не интересно</a
+                  >
+                  <a class="lists__link" href="#">
+                    <img
+                      src="img/book-3.png"
+                      width="100%"
+                      height="auto"
+                      alt="Мистер"
+                    />
+                  </a>
+                  <div class="lists__wrapper">
+                    <a class="lists__book-title" href="#">Мистер</a>
+                    <div class="lists__menu">
+                      <div class="lists__menu-block">
+                        <a href="javascript:void(0);" onclick="">Поделиться</a>
+                        <a
+                          href="javascript:void(0);"
+                          title="Не интересно"
+                          onclick=""
+                          >Не интересно</a
+                        >
+                      </div>
+                    </div>
+                    <a class="lists__author" href="#">Эрика Джеймс</a>
+                    <div class="lists__rating">3,0</div>
+                    <a class="btn-add-plus" href=""></a>
+                  </div>
+                </li>
+
+                <li class="lists__item">
+                  <span class="lists__status">Бестселлер</span
+                  ><a
+                    class="lists__remove"
+                    href="javascript:void(0);"
+                    onclick=""
+                    >Не интересно</a
+                  >
+                  <a class="lists__link" href="#">
+                    <img
+                      src="img/book-4.png"
+                      width="100%"
+                      height="auto"
+                      alt="Дерзкий, юный и мертвый"
+                    />
+                  </a>
+                  <div class="lists__wrapper">
+                    <a class="lists__book-title" href="#"
+                      >Дерзкий, юный и мертвый</a
+                    >
+                    <div class="lists__menu">
+                      <div class="lists__menu-block">
+                        <a href="javascript:void(0);" onclick="">Поделиться</a>
+                        <a
+                          href="javascript:void(0);"
+                          title="Не интересно"
+                          onclick=""
+                          >Не интересно</a
+                        >
+                      </div>
+                    </div>
+                    <a class="lists__author" href="#">Джессика Феллоуз</a>
+                    <div class="lists__rating">5,0</div>
+                    <a class="btn-add-plus" href=""></a>
+                  </div>
+                </li>
+                <li class="lists__item">
+                  <a class="lists__remove" href="javascript:void(0);" onclick=""
+                    >Не интересно</a
+                  >
+                  <a class="lists__link" href="#">
+                    <img
+                      src="img/book-5.png"
+                      width="100%"
+                      height="auto"
+                      alt="Быть книголюбом"
+                    />
+                  </a>
+                  <div class="lists__wrapper">
+                    <a class="lists__book-title" href="#">Быть книголюбом</a>
+                    <div class="lists__menu">
+                      <div class="lists__menu-block">
+                        <a href="javascript:void(0);" onclick="">Поделиться</a>
+                        <a
+                          href="javascript:void(0);"
+                          title="Не интересно"
+                          onclick=""
+                          >Не интересно</a
+                        >
+                      </div>
+                    </div>
+                    <a class="lists__author" href="#">Дебби Танг</a>
+                    <div class="lists__rating">4,6</div>
+                    <a class="btn-add-plus" href=""></a>
+                  </div>
+                </li>
+
+                <li class="lists__item">
+                  <a class="lists__remove" href="javascript:void(0);" onclick=""
+                    >Не интересно</a
+                  >
+                  <a class="lists__link" href="#">
+                    <img
+                      src="img/book-6.png"
+                      width="100%"
+                      height="auto"
+                      alt="Спаси себя"
+                    />
+                  </a>
+                  <div class="lists__wrapper">
+                    <a class="lists__book-title" href="#">Спаси себя</a>
+                    <div class="lists__menu">
+                      <div class="lists__menu-block">
+                        <a href="javascript:void(0);" onclick="">Поделиться</a>
+                        <a
+                          href="javascript:void(0);"
+                          title="Не интересно"
+                          onclick=""
+                          >Не интересно</a
+                        >
+                      </div>
+                    </div>
+                    <a class="lists__author" href="#">Мона Кастен</a>
+                    <div class="lists__rating">4,3</div>
+                    <a class="btn-add-plus" href=""></a>
+                  </div>
+                </li>
+
+                <li class="lists__item">
+                  <a class="lists__remove" href="javascript:void(0);" onclick=""
+                    >Не интересно</a
+                  >
+                  <a class="lists__link" href="#">
+                    <img
+                      src="img/book-7.png"
+                      width="100%"
+                      height="auto"
+                      alt="Серотонин"
+                    />
+                  </a>
+                  <div class="lists__wrapper">
+                    <a class="lists__book-title" href="#">Серотонин</a>
+                    <div class="lists__menu">
+                      <div class="lists__menu-block">
+                        <a href="javascript:void(0);" onclick="">Поделиться</a>
+                        <a
+                          href="javascript:void(0);"
+                          title="Не интересно"
+                          onclick=""
+                          >Не интересно</a
+                        >
+                      </div>
+                    </div>
+                    <a class="lists__author" href="#">Мишель Уэльбек</a>
+                    <div class="lists__rating">4,0</div>
+                    <a class="btn-add-plus" href=""></a>
+                  </div>
+                </li>
+
+                <li class="lists__item">
+                  <a class="lists__remove" href="javascript:void(0);" onclick=""
+                    >Не интересно</a
+                  >
+                  <a class="lists__link" href="#">
+                    <img
+                      src="img/book-8.png"
+                      width="100%"
+                      height="auto"
+                      alt="Цветок тьмы"
+                    />
+                  </a>
+                  <div class="lists__wrapper">
+                    <a class="lists__book-title" href="#">Цветок тьмы</a>
+                    <div class="lists__menu">
+                      <div class="lists__menu-block">
+                        <a href="javascript:void(0);" onclick="">Поделиться</a>
+                        <a
+                          href="javascript:void(0);"
+                          title="Не интересно"
+                          onclick=""
+                          >Не интересно</a
+                        >
+                      </div>
+                    </div>
+                    <a class="lists__author" href="#">П. М. Фристоун</a>
+                    <div class="lists__rating">4,0</div>
+                    <a class="btn-add-plus" href=""></a>
+                  </div>
+                </li>
+
+                <li class="lists__item">
+                  <a class="lists__remove" href="javascript:void(0);" onclick=""
+                    >Не интересно</a
+                  >
+                  <a class="lists__link" href="#">
+                    <img
+                      src="img/book-9.png"
+                      width="100%"
+                      height="auto"
+                      alt="Харли Квинн: Безумная..."
+                    />
+                  </a>
+                  <div class="lists__wrapper">
+                    <a class="lists__book-title" href="#"
+                      >Харли Квинн: Безумная...</a
+                    >
+                    <div class="lists__menu">
+                      <div class="lists__menu-block">
+                        <a href="javascript:void(0);" onclick="">Поделиться</a>
+                        <a
+                          href="javascript:void(0);"
+                          title="Не интересно"
+                          onclick=""
+                          >Не интересно</a
+                        >
+                      </div>
+                    </div>
+                    <a class="lists__author" href="#">Пэт Кэдиган, Пол</a>
+                    <div class="lists__rating">0</div>
+                    <a class="btn-add-plus" href=""></a>
+                  </div>
+                </li>
+                <li class="lists__item">
+                  <a class="lists__remove" href="javascript:void(0);" onclick=""
+                    >Не интересно</a
+                  >
+                  <a class="lists__link" href="#">
+                    <img
+                      src="img/book-10.png"
+                      width="100%"
+                      height="auto"
+                      alt="Земля"
+                    />
+                  </a>
+                  <div class="lists__wrapper">
+                    <a class="lists__book-title" href="#">Земля</a>
+                    <div class="lists__menu">
+                      <div class="lists__menu-block">
+                        <a href="javascript:void(0);" onclick="">Поделиться</a>
+                        <a
+                          href="javascript:void(0);"
+                          title="Не интересно"
+                          onclick=""
+                          >Не интересно</a
+                        >
+                      </div>
+                    </div>
+                    <a class="lists__author" href="#">Михаил Елизаров</a>
+                    <div class="lists__rating">4,0</div>
+                    <a class="btn-add-plus" href=""></a>
+                  </div>
+                </li>
+                <li class="lists__item">
+                  <a class="lists__remove" href="javascript:void(0);" onclick=""
+                    >Не интересно</a
+                  >
+                  <a class="lists__link" href="#">
+                    <img
+                      src="img/book-11.png"
+                      width="100%"
+                      height="auto"
+                      alt="Земля"
+                    />
+                  </a>
+                  <div class="lists__wrapper">
+                    <a class="lists__book-title" href="#">Земля</a>
+                    <div class="lists__menu">
+                      <div class="lists__menu-block">
+                        <a href="javascript:void(0);" onclick="">Поделиться</a>
+                        <a
+                          href="javascript:void(0);"
+                          title="Не интересно"
+                          onclick=""
+                          >Не интересно</a
+                        >
+                      </div>
+                    </div>
+                    <a class="lists__author" href="#">Михаил Елизаров</a>
+                    <div class="lists__rating">4,0</div>
+                    <a class="btn-add-plus" href=""></a>
+                  </div>
+                </li>
+                <li class="lists__item">
+                  <a class="lists__remove" href="javascript:void(0);" onclick=""
+                    >Не интересно</a
+                  >
+                  <a class="lists__link" href="#">
+                    <img
+                      src="img/book-12.png"
+                      width="100%"
+                      height="auto"
+                      alt="Земля"
+                    />
+                  </a>
+                  <div class="lists__wrapper">
+                    <a class="lists__book-title" href="#">Земля</a>
+                    <div class="lists__menu">
+                      <div class="lists__menu-block">
+                        <a href="javascript:void(0);" onclick="">Поделиться</a>
+                        <a
+                          href="javascript:void(0);"
+                          title="Не интересно"
+                          onclick=""
+                          >Не интересно</a
+                        >
+                      </div>
+                    </div>
+                    <a class="lists__author" href="#">Михаил Елизаров</a>
+                    <div class="lists__rating">4,0</div>
+                    <a class="btn-add-plus" href=""></a>
+                  </div>
+                </li>
+              </ul>
+              <div id="recmaster-more-btn">
+                <a href="javascript:void(0);" class="btn__show-more" onclick=""
+                  >Показать ещё</a
+                >
+              </div>
+              <div id="recmaster-pagination">
+                <div class="pagination">
+                  <span
+                    class="pagination__page"
+                    id="a-list-page-1"
+                    title="Первая страница"
+                    >«</span
+                  >
+
+                  <span class="pagination__page" id="a-list-page-prev-">‹</span>
+
+                  <span class="pagination__page pagination__page--active"
+                    >1</span
+                  >
+                  <a class="pagination__page" id="a-list-page-2" href="#">2</a>
+                  <a class="pagination__page" id="a-list-page-3" href="#">3</a>
+                  <a class="pagination__page" id="a-list-page-4" href="#">4</a>
+                  <a class="pagination__page" id="a-list-page-5" href="#">5</a>
+                  <a class="pagination__page" id="a-list-page-6" href="#">6</a>
+                  <a class="pagination__page" id="a-list-page-7" href="#">7</a>
+                  <a class="pagination__page" id="a-list-page-8" href="#">8</a>
+                  <a class="pagination__page" id="a-list-page-9" href="#">9</a>
+
+                  <a class="pagination__page" id="a-list-page-next-2" href="#"
+                    >›</a
+                  >
+                  <span
+                    class="pagination__page"
+                    title="Последняя страница"
+                    id="a-list-page-"
+                    >»</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="bottom-content">© Лайвлиб 2006-2021</div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="js/reс-des.js" type="text/javascript"></script>
+  </body>
+</html>
