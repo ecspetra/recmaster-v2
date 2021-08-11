@@ -1024,7 +1024,7 @@ main {
   width: 100%;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
-  padding: 0 0 17px;
+  padding: 0 0 20px;
   margin: 0 0 -20px;
 }
 .recmaster-tab .recmaster-tab__limiter .recmaster-tab__list {
