@@ -879,7 +879,7 @@ main {
 .recmaster__text {
   font: 18px/24px "Source Sans Pro", sans-serif;
   color: #252626;
-  margin: 0 0 34px;
+  margin: -17px 0 34px;
   text-align: center;
 }
 
@@ -1017,7 +1017,7 @@ main {
   position: relative;
   display: block;
   overflow: hidden;
-  margin: 0;
+  margin: 0 0 14px;
   width: 100%;
 }
 .recmaster-tab .recmaster-tab__limiter {
@@ -1213,12 +1213,14 @@ main {
 }
 
 .recmaster-final {
+  box-sizing: border-box;
   position: relative;
   border-radius: 24px;
   max-width: 816px;
   width: 100%;
-  height: 420px;
+  min-height: 420px;
   margin: 15px 0 40px;
+  padding: 0px 20px;
   display: flex;
   flex-direction: column;
   background: -webkit-gradient(linear, left top, left bottom, from(#4ba0ee), to(#76baf1));
@@ -1254,6 +1256,17 @@ main {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  #recmaster-type .recmaster-block__wrap {
+    grid-template-columns: 1fr;
+  }
+
+  #recmaster-genre-out .recmaster-block__wrap,
+#recmaster-genre .recmaster-block__wrap {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
