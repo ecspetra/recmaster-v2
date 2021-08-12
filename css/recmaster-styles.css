@@ -431,8 +431,14 @@ main {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  gap: 16px;
 }
 
+@media (max-width: 768px) {
+  .recmaster-booklist {
+    justify-content: center;
+  }
+}
 @media (max-width: 480px) {
   #recmaster-type .recmaster-block__wrap {
     grid-template-columns: 1fr;
