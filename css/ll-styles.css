@@ -446,35 +446,6 @@ a {
   background: url("../img/SVGsprite.svg") -140px -156px no-repeat;
 }
 
-.btn__show-more,
-.btn__show-more:visited {
-  border: none;
-  background-color: #3e99ed;
-  color: #fff;
-  font: 600 18px/24px "Source Sans Pro", sans-serif;
-  max-width: 364px;
-  height: 40px;
-  border-radius: 24px;
-  margin: 16px auto 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.btn__show-more:hover,
-.btn__show-more:active {
-  background: #3b91e0;
-}
-
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -552,6 +523,12 @@ a {
 
   .pagination a:nth-last-child(2) {
     margin: 0 0 0 8px;
+  }
+
+  .sab__wrapper {
+    position: relative;
+    padding: 0;
+    margin-left: 0;
   }
 }
 

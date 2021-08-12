@@ -3,7 +3,7 @@
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0px 20px;
+  padding: 0px 16px;
 }
 
 .hidden {
@@ -98,24 +98,6 @@ main {
   cursor: pointer;
 }
 
-.recmaster-btn__more {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #252626;
-  background: #edf0f7;
-  width: 364px;
-  height: 40px;
-  box-sizing: border-box;
-  border-radius: 20px;
-  font: 18px/24px "Source Sans Pro", sans-serif;
-  margin: 32px auto 40px auto;
-}
-
-.recmaster-btn__more-books-section {
-  margin: -8px auto 40px auto;
-}
-
 .recmaster input[type=checkbox],
 .recmaster input[type=radio] {
   display: none;
@@ -192,10 +174,11 @@ main {
 }
 
 .recmaster-tab {
+  max-width: 816px;
   position: relative;
   display: block;
   overflow: hidden;
-  margin: 0;
+  margin: 0 auto 0;
   width: 100%;
 }
 .recmaster-tab .recmaster-tab__limiter {
@@ -207,7 +190,8 @@ main {
   height: 73px;
 }
 .recmaster-tab .recmaster-tab__limiter .recmaster-tab__list {
-  width: 100%;
+  min-width: 100%;
+  width: max-content;
   display: flex;
 }
 .recmaster-tab .recmaster-tab__limiter .recmaster-tab__list .recmaster-tab__item:not(:last-of-type) {
@@ -309,6 +293,12 @@ main {
   box-sizing: border-box;
   margin: 0 0 8px;
   padding: 12px 20px;
+}
+.recmaster__author a {
+  width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .recmaster__author img {
   width: 72px;
@@ -435,6 +425,53 @@ main {
   gap: 16px;
 }
 
+.btn__show-more,
+.btn__show-more:visited {
+  border: none;
+  background-color: #3e99ed;
+  color: #fff;
+  font: 600 18px/24px "Source Sans Pro", sans-serif;
+  max-width: 364px;
+  height: 40px;
+  border-radius: 24px;
+  margin: 16px auto 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn__show-more:hover,
+.btn__show-more:active {
+  background: #3b91e0;
+}
+
+.recmaster-btn__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #252626;
+  background: #edf0f7;
+  max-width: 364px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font: 18px/24px "Source Sans Pro", sans-serif;
+  margin: 32px auto 40px auto;
+}
+
+.recmaster-btn__more-books-section {
+  margin: -8px auto 40px auto;
+}
+
 @media (max-width: 768px) {
   .recmaster-booklist {
     justify-content: center;
@@ -442,12 +479,83 @@ main {
 }
 @media (max-width: 480px) {
   #recmaster-type .recmaster-block__wrap {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 
   #recmaster-genre-out .recmaster-block__wrap,
 #recmaster-genre .recmaster-block__wrap {
     grid-template-columns: 1fr;
+  }
+
+  .recmaster__author {
+    height: 136px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "img title" "img sab";
+    align-content: space-between;
+    justify-content: start;
+    margin: 0 0 16px;
+    padding: 12px 12px 40px 12px;
+  }
+  .recmaster__author a {
+    grid-area: title;
+  }
+  .recmaster__author img {
+    grid-area: img;
+    margin: 0 12px 0 0;
+  }
+  .recmaster__author .sab {
+    grid-area: sab;
+    margin: auto 0 20px;
+  }
+
+  .recmaster__author i:before {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    top: auto;
+    font: 600 14px/16px "Source Sans Pro", sans-serif;
+    height: 28px;
+    width: calc(100% - 108px);
+    border-radius: 14px;
+    box-sizing: border-box;
+  }
+
+  .recmaster-sort .recmaster-sort__link {
+    border-radius: 14px;
+    font: 14px/20px "Source Sans Pro", sans-serif;
+    height: 28px;
+    box-sizing: border-box;
+    padding: 0 11px;
+    margin: 0 8px 0 0;
+  }
+
+  .recmaster__text {
+    font: 16px/24px "Source Sans Pro", sans-serif;
+    margin: 0 0 30px;
+  }
+
+  .recmaster-tab__limiter {
+    height: 58px !important;
+  }
+
+  .recmaster-tab__item a,
+.recmaster-tab__item a:visited {
+    font: 14px/16px "Source Sans Pro", sans-serif !important;
+    border-radius: 14px !important;
+    padding: 4px 10px 8px !important;
+    height: 48px !important;
+    max-width: 134px !important;
+    min-width: 43px !important;
+  }
+
+  .recmaster__type {
+    font: 600 18px/24px "Source Sans Pro", sans-serif;
+    height: 76px;
+    margin: 0 0 16px;
   }
 }
 
