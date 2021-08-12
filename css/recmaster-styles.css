@@ -195,7 +195,7 @@ main {
   position: relative;
   display: block;
   overflow: hidden;
-  margin: 0 0 14px;
+  margin: 0;
   width: 100%;
 }
 .recmaster-tab .recmaster-tab__limiter {
@@ -204,6 +204,7 @@ main {
   -webkit-overflow-scrolling: touch;
   padding: 0 0 20px;
   margin: 0 0 -20px;
+  height: 73px;
 }
 .recmaster-tab .recmaster-tab__limiter .recmaster-tab__list {
   width: 100%;

@@ -180,14 +180,16 @@ main {
   position: relative;
   display: block;
   overflow: hidden;
-  margin: 0 0 14px;
+  margin: 0;
   width: 100%;
+
   .recmaster-tab__limiter {
     width: 100%;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     padding: 0 0 20px;
     margin: 0 0 -20px;
+    height: 73px;
     .recmaster-tab__list {
       width: 100%;
       display: flex;
