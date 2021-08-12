@@ -44,6 +44,7 @@ main {
     margin: 0 auto 0;
   }
 }
+
 .recmaster__title {
   color: #252626;
   font: 600 32px/40px "Source Sans Pro", sans-serif;
@@ -54,7 +55,7 @@ main {
   font: 18px/24px "Source Sans Pro", sans-serif;
   color: #252626;
   // margin: -17px 0 34px;
-  margin: 0px 0 34px;
+  margin: 0 0 34px;
   text-align: center;
 }
 .recmaster-btn__wrap {
@@ -179,8 +180,7 @@ main {
   position: relative;
   display: block;
   overflow: hidden;
-  margin: 0;
-  // margin: 0 0 14px;
+  margin: 0 0 14px;
   width: 100%;
   .recmaster-tab__limiter {
     width: 100%;
